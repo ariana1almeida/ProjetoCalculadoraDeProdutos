@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora De Produtos</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/assets/script.js"></script>
+</head>
+
+<body>
+    <div class="text-center">
+        <header>
+            <h2>Tabela de Produtos</h2>
+        </header>
+    </div>
+    <section class="container-fluid text-center">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor Un.</th>
+                    <th>Valor Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Coca-Cola Light</td>
+                    <td>
+                        <!-- Botão de quantidade -->
+                        <button class="btn btn-danger" onclick="remover()">
+                            -
+                        </button>
+                        <input type="text" id="button1" class="quantityInput" value="0">
+                        <button class="btn btn-success" onclick="adicionar()">
+                            +
+                        </button>
+                    </td>
+                    <td>
+                        <!-- Input de valor unitário -->
+                        <label for="unitaryValue">R$</label>
+                        <input type="numeric" id="unitaryValue1">
+                    </td>
+                    <td>
+                        <!-- valor total -->
+                        <label for="totalValue" id="total1">R$</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Coca-Cola</td>
+                    <td>
+                        <!-- Botão de quantidade -->
+                        <button class="btn btn-danger" onclick="remover()">
+                            -
+                        </button>
+                        <input type="numeric" id="button2" class="quantityInput">
+                        <button class="btn btn-success" onclick="adicionar()">
+                            +
+                        </button>
+                    </td>
+                    <td>
+                        <!-- Input de valor unitário -->
+                        <label for="unitaryValue">R$</label>
+                        <input type="numeric" id="unitaryValue2">
+                    </td>
+                    <td>
+                        <!-- valor total -->
+                        <label for="totalValue" id="total2">R$</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Coca-Cola Zero</td>
+                    <td>
+                        <!-- Botão de quantidade -->
+                        <button class="btn btn-danger" onclick="remover()">
+                            -
+                        </button>
+                        <input type="numeric" id="button3" class="quantityInput">
+                        <button class="btn btn-success" onclick="adicionar()">
+                            +
+                        </button>
+                    </td>
+                    <td>
+                        <!-- Input de valor unitário -->
+                        <label for="unitaryValue">R$</label>
+                        <input type="numeric" id="unitaryValue3">
+                    </td>
+                    <td>
+                        <!-- valor total -->
+                        <label for="totalValue" id="total3">R$</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Pepsi 2L</td>
+                    <td>
+                        <!-- Botão de quantidade -->
+                        <button class="btn btn-danger" onclick="remover()">
+                            -
+                        </button>
+                        <input type="numeric" id="button4" class="quantityInput">
+                        <button class="btn btn-success" onclick="adicionar()">
+                            +
+                        </button>
+                    </td>
+                    <td>
+                        <!-- Input de valor unitário -->
+                        <label for="unitaryValue">R$</label>
+                        <input type="numeric" id="unitaryValue4">
+                    </td>
+                    <td>
+                        <!-- valor total -->
+                        <label for="totalValue" id="total4">R$</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Pepsi Twist</td>
+                    <td>
+                        <!-- Botão de quantidade -->
+                        <button class="btn btn-danger" onclick="remover()">
+                            -
+                        </button>
+                        <input type="numeric" id="button5" class="quantityInput">
+                        <button class="btn btn-success" onclick="adicionar()">
+                            +
+                        </button>
+                    </td>
+                    <td>
+                        <!-- Input de valor unitário -->
+                        <label for="unitaryValue">R$</label>
+                        <input type="numeric" id="unitaryValue5">
+                    </td>
+                    <td>
+                        <!-- valor total -->
+                        <label for="totalValue" id="total5">R$</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>

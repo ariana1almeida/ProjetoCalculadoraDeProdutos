@@ -1,0 +1,9 @@
+.quantityInput {
+    width: 3vw;
+    height: 5vh;
+}
+
+body {
+    padding: 9%;
+    background-color: rgb(233, 233, 203);
+}
